@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_float"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.koumanwei.testdemo.activity.FloatActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#C4E1FF"
+        android:gravity="center"
+        android:text="标题部分"
+        android:textColor="#ffffff" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_float"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#C4E1FF"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="悬浮部分"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
